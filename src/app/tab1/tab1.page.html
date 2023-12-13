@@ -1,17 +1,66 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-fab vertical="top" horizontal="end">
+    <ion-fab-button (click)="addLikes()">
+      <ion-icon name="thumbs-up-sharp"></ion-icon>
+   
+    </ion-fab-button>
+    <ion-badge color="danger">{{likes}}</ion-badge>
+  </ion-fab>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-grid>
+    <ion-row>
+      <ion-col id="fotoPerfilCol">
+        <img src="../../assets/img/aviao.png.png" class="logo-img">
+        
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col id="nome">Viva a Liberdade</ion-col>
+    </ion-row>
+   
+    <ion-row>
+      <ion-col class="i1">
+        <img src="../../assets/img/02.png">
+        <h2>Reino Unido</h2>
+        
+      </ion-col>
+      <ion-col class="i2">
+        <img src="../../assets/img/03.png">
+        <h2>Corea do Sul</h2>
+      </ion-col>
+      <ion-col class="i3">
+        <img src="../../assets/img/04.png">
+        <h2>Israel</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="i3">
+        <img src="../../assets/img/05.png">
+        <h2>Australia</h2>
+      </ion-col>
+      <ion-col class="i2">
+        <img src="../../assets/img/06.png">
+        <h2>Alemanha</h2>
+      </ion-col>
+      <ion-col class="i1">
+        <img src="../../assets/img/11.png">
+        <h2>Italia</h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="i2">
+        <img src="../../assets/img/08.png">
+        <h2>Portugal</h2>
+      </ion-col>
+      <ion-col class="i1">
+        <img src="../../assets/img/09.png">
+        <h2>Suiça</h2>
+      </ion-col>
+      <ion-col class="i3">
+        <img src="../../assets/img/10.png">
+        <h2>Uruguai</h2>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
